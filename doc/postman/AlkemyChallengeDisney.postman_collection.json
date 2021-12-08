@@ -1,0 +1,434 @@
+{
+	"info": {
+		"_postman_id": "6905f584-934b-4057-80e3-0030ffbd7744",
+		"name": "AlkemyChallengeDisney",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "gender",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwYWJsb2RhdmlkbWlndWV6QGdtYWlsLmNvbSIsImV4cCI6MTYzODk5NjY5NywiaWF0IjoxNjM4OTYwNjk3fQ.cbu1E9AjlSFl77OQCqVHElLoSTq_uNzR26MU24pZqHc",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"accion\",\r\n    \"image\":\"/usr/tmp/gender.jpg\"\r\n\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/genders",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"genders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "gender",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwYWJsb2RhdmlkbWlndWV6QGdtYWlsLmNvbSIsImV4cCI6MTYzODk5NjY5NywiaWF0IjoxNjM4OTYwNjk3fQ.cbu1E9AjlSFl77OQCqVHElLoSTq_uNzR26MU24pZqHc",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/genders",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"genders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "movies",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwYWJsb2RhdmlkbWlndWV6QGdtYWlsLmNvbSIsImV4cCI6MTYzODk5NjY5NywiaWF0IjoxNjM4OTYwNjk3fQ.cbu1E9AjlSFl77OQCqVHElLoSTq_uNzR26MU24pZqHc",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"image\": \"/usr/tmp/movies.jpg\",\r\n    \"title\": \"Rey Leon\",\r\n   \"creationDate\": \"2020-11-22\",\r\n   \"rating\":5,\r\n   \"genderId\":1,\r\n   \"characters\":[\r\n       {\r\n            \"name\": \"Mufasa\",\r\n            \"image\": \"/usr/tmp/Mufasa.jpg\",\r\n            \"age\": 35,\r\n            \"weight\": 240,\r\n            \"history\": \"Murio en un barranco\"\r\n       }\r\n   ]\r\n   \r\n\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/movies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "movies",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwYWJsb2RhdmlkbWlndWV6QGdtYWlsLmNvbSIsImV4cCI6MTYzODk5NjY5NywiaWF0IjoxNjM4OTYwNjk3fQ.cbu1E9AjlSFl77OQCqVHElLoSTq_uNzR26MU24pZqHc",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/movies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "movies id ",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwYWJsb2RhdmlkbWlndWV6QGdtYWlsLmNvbSIsImV4cCI6MTYzODk5NjY5NywiaWF0IjoxNjM4OTYwNjk3fQ.cbu1E9AjlSFl77OQCqVHElLoSTq_uNzR26MU24pZqHc",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/movies/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"movies",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "character",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwYWJsb2RhdmlkbWlndWV6QGdtYWlsLmNvbSIsImV4cCI6MTYzODk5NjY5NywiaWF0IjoxNjM4OTYwNjk3fQ.cbu1E9AjlSFl77OQCqVHElLoSTq_uNzR26MU24pZqHc",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Scar\",\r\n    \"image\": \"/usr/tmp/Scar.jpg \",\r\n    \"age\": 40,\r\n    \"weight\": 220,\r\n    \"history\": \"Hermano de Mufasa\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/characters",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"characters"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "characters",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwYWJsb2RhdmlkbWlndWV6QGdtYWlsLmNvbSIsImV4cCI6MTYzODk5NjY5NywiaWF0IjoxNjM4OTYwNjk3fQ.cbu1E9AjlSFl77OQCqVHElLoSTq_uNzR26MU24pZqHc",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/characters",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"characters"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "character id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwYWJsb2RhdmlkbWlndWV6QGdtYWlsLmNvbSIsImV4cCI6MTYzODk5NjY5NywiaWF0IjoxNjM4OTYwNjk3fQ.cbu1E9AjlSFl77OQCqVHElLoSTq_uNzR26MU24pZqHc",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/characters/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"characters",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "character filter",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwYWJsb2RhdmlkbWlndWV6QGdtYWlsLmNvbSIsImV4cCI6MTYzODk5NjY5NywiaWF0IjoxNjM4OTYwNjk3fQ.cbu1E9AjlSFl77OQCqVHElLoSTq_uNzR26MU24pZqHc",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/characters/filter?movies=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"characters",
+						"filter"
+					],
+					"query": [
+						{
+							"key": "age",
+							"value": "18",
+							"disabled": true
+						},
+						{
+							"key": "movies",
+							"value": "1"
+						},
+						{
+							"key": "name",
+							"value": "Mufasa",
+							"disabled": true
+						},
+						{
+							"key": "weight",
+							"value": "220",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "character",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwYWJsb2RhdmlkbWlndWV6QGdtYWlsLmNvbSIsImV4cCI6MTYzODk5NjY5NywiaWF0IjoxNjM4OTYwNjk3fQ.cbu1E9AjlSFl77OQCqVHElLoSTq_uNzR26MU24pZqHc",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/characters/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"characters",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "movie",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwYWJsb2RhdmlkbWlndWV6QGdtYWlsLmNvbSIsImV4cCI6MTYzODk5NjY5NywiaWF0IjoxNjM4OTYwNjk3fQ.cbu1E9AjlSFl77OQCqVHElLoSTq_uNzR26MU24pZqHc",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/movies/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"movies",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post movie_characters",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwYWJsb2RhdmlkbWlndWV6QGdtYWlsLmNvbSIsImV4cCI6MTYzODk5NjY5NywiaWF0IjoxNjM4OTYwNjk3fQ.cbu1E9AjlSFl77OQCqVHElLoSTq_uNzR26MU24pZqHc",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/movies/1/character/4",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"movies",
+						"1",
+						"character",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"username\":\"pablodavidmiguez@gmail.com\",\r\n   \"password\":\"password1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/auth/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"username\":\"pablodavidmiguez@gmail.com\",\r\n   \"password\":\"password1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
